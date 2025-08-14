@@ -1,7 +1,7 @@
 # 🚀 Project 7 – Dockerized Nginx Reverse Proxy for Flask App on EC2
 
-This project demonstrates how to **containerize a Flask web application** and serve it through an **Nginx reverse proxy** using Docker Compose.  
-It works both **locally** (Docker Desktop / WSL2) and **on AWS EC2**.
+This project demonstrates how to containerize a Flask web application and serve it through an Nginx reverse proxy using Docker Compose.
+It works both locally (Docker Desktop / WSL2) and on AWS EC2 with public IP access (e.g., http://16.16.123.122/).
 
 ---
 
@@ -52,6 +52,7 @@ Make sure you have:
 │ Nginx Reverse Proxy │
 │ Container           │
 │ Ports: 80 → 5000    │
+│ (docker-compose)    │
 └─────────┬───────────┘
           │ Forward to Flask
           ▼
@@ -90,7 +91,7 @@ http://<EC2-PUBLIC-IP> # for EC2
 ```
 ### 📜 License
 This project is licensed under the MIT License.
----
+
 ## 👤 Author
 TaimoorDevOps
 ## 🔗 GitHub
